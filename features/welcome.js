@@ -3,10 +3,10 @@
 module.exports = function(controller) {
 
    controller.on('connected', function(bot, message) {
-      bot.reply(message,"Welcome, my name is Jordan ");
+      bot.reply(message,"Welcome, my name is Jordan and I am open to work");
       bot.reply(message, "....")
       bot.reply(message, "Well I am Jordan's avatar")
-       bot.reply(message,{
+      bot.reply(message,{
                 text: 'Ask me some questions',
                 quick_replies: [
                     {
@@ -14,8 +14,8 @@ module.exports = function(controller) {
                         payload: 'Conact Info',
                     },
                     {
-                        title: 'Phone',
-                        payload: '908-240-7545',
+                        title: 'Work History',
+                        payload: 'Work History',
                     }
                 ]
             });
