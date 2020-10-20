@@ -14,7 +14,11 @@ module.exports = function(controller) {
                     {
                         title: 'The Walt Disney Company',
                         payload: 'The Walt Disney Company',
-                    }
+                    },
+                    {
+                        title: 'Main Menu',
+                        payload: 'Main Menu',
+                    },
                 ]
             });
         });

@@ -16,7 +16,11 @@ module.exports = function(controller) {
                     {
                         title: 'Work History',
                         payload: 'Work History',
-                    }
+                    },
+                    {
+                        title: 'Education',
+                        payload: 'Education',
+                    },
                 ]
             });
     });
@@ -32,7 +36,11 @@ module.exports = function(controller) {
                     {
                         title: 'Work History',
                         payload: 'Work History',
-                    }
+                    },
+                    {
+                        title: 'Education',
+                        payload: 'Education',
+                    },
                 ]
             });
   })
