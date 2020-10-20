@@ -9,7 +9,7 @@ html {
   padding: 0;
   font-size: 18px;
   background-color: #FFF;
-  font-family: "helvetica", sans-serif;
+  font-family: Monaco;
 }
 
 .wrapper {
@@ -103,7 +103,7 @@ div.hr {
 }
 
 a.button {
-  border: 2px solid #a795ef;
+  border: 2px solid #586E75;
   font-weight: bold;
   margin: 0;
   border-radius: 3px;
@@ -116,14 +116,12 @@ a.button {
   transition: box-shadow 0.1s linear;
 }
 a.button:hover {
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 5px #073642;
 }
 
 /* chat client */
 #message_window {
-  background: #FFFFFF;
-  border-left: 1px solid #CCC;
-  border-right: 1px solid #CCC;
+  background: #073642;
   /*height: 500px;
   width: 320px;*/
   height: 100%;
@@ -131,7 +129,7 @@ a.button:hover {
   /*margin: 2rem auto;*/
   display: flex;
   flex-direction: column;
-  font-family: "helvetica", sans-serif;
+  font-family: Monaco;
 }
 #message_window .disconnected {
   background: #FFFFCC;
@@ -193,7 +191,6 @@ a.button:hover {
   background: none;
   border: 0;
   cursor: pointer;
-  color: blue;
   font-weight: bold;
 }
 #message_window form {
@@ -247,8 +244,8 @@ a.button:hover {
 }
 #message_window .message.outgoing {
   float: right;
-  background: #a795ef;
-  color: white;
+  background: #859900;
+  color: #002b36;
 }
 #message_window #message_replies {
   text-align: center;
@@ -270,16 +267,22 @@ a.button:hover {
 #message_window #message_replies a {
   text-decoration: none;
   display: block;
-  border: 1px solid #a795ef;
-  color: #a795ef;
+  border: 1px solid #EEE8D5;
+  color: #EEE8D5;
   border-radius: 16px;
   padding: 0.25rem 1rem;
   font-size: 14px;
   cursor: pointer;
 }
 #message_window #message_replies a:hover {
-  background: #a795ef;
-  color: #FFF;
+  background: #268bd2;
+  color: #EEE8D5;
+}
+
+.submitButton{
+  text-decoration: none;
+  color: #cb4b16;
+  font-size: 25px;
 }
 
 /* typing indicator CSS based on code by Joseph Fusco -> https://codepen.io/fusco/pen/XbpaYv */

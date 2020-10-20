@@ -34,7 +34,7 @@ module.exports = function(controller) {
                 quick_replies: [
                     {
                         title: 'Main Menu',
-                        payload: 'Ask me some questions',
+                        payload: 'Main Menu',
                     },
                     {
                         title: 'More Contact Info',
@@ -46,14 +46,53 @@ module.exports = function(controller) {
 
     controller.hears('What is your phone number?', 'message', async(bot, message) =>{
       bot.reply(message, 'My phone number is (908)-240-7545')
+      await bot.reply(message,{
+                text: 'Would you like more contact info or the main menu?',
+                quick_replies: [
+                    {
+                        title: 'Main Menu',
+                        payload: 'Main Menu',
+                    },
+                    {
+                        title: 'More Contact Info',
+                        payload: 'Conact Info',
+                    }
+                ]
+            });
     })
     
     controller.hears('Can I find you on Linkedin?', 'message', async(bot, message) =>{
       bot.reply(message, 'I can be found on Linkedin at <https://www.linkedin.com/in/ackermanjordan/>')
+      await bot.reply(message,{
+                text: 'Would you like more contact info or the main menu?',
+                quick_replies: [
+                    {
+                        title: 'Main Menu',
+                        payload: 'Main Menu',
+                    },
+                    {
+                        title: 'More Contact Info',
+                        payload: 'Conact Info',
+                    }
+                ]
+            });
     })
 
     controller.hears('Can I find you on Github?', 'message', async(bot, message) =>{
       bot.reply(message, 'I can be found on Github at <https://github.com/jork41989>')
+      await bot.reply(message,{
+                text: 'Would you like more contact info or the main menu?',
+                quick_replies: [
+                    {
+                        title: 'Main Menu',
+                        payload: 'Main Menu',
+                    },
+                    {
+                        title: 'More Contact Info',
+                        payload: 'Conact Info',
+                    }
+                ]
+            });
       
     })
     

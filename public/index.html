@@ -1,6 +1,8 @@
 <html>
     <head>
         <title>JordanBot</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+      integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.min.js"></script>
         <script src="https://cdn.rawgit.com/showdownjs/showdown/1.7.4/dist/showdown.min.js"></script>
         <link rel="stylesheet" href="/css/styles.css" />
@@ -53,7 +55,7 @@
             <footer>
                 <form onsubmit="Botkit.send(Botkit.input.value, event)">
                     <input type="text" autocomplete="off" id="messenger_input" placeholder="Type here..." />
-                    <button type="submit">Send</button>
+                    <button type="submit" class="submitButton"><i class="fas fa-comment"></i></button>
                 </form>
             </footer>
         </div>

@@ -21,5 +21,20 @@ module.exports = function(controller) {
             });
     });
 
+  controller.hears(['Main Menu'], 'message', async (bot, message) => {
+    bot.reply(message,{
+                text: 'Ask me some questions',
+                quick_replies: [
+                    {
+                        title: 'Contact Info',
+                        payload: 'Conact Info',
+                    },
+                    {
+                        title: 'Work History',
+                        payload: 'Work History',
+                    }
+                ]
+            });
+  })
 
 }
