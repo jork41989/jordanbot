@@ -33,7 +33,7 @@ module.exports = function(controller) {
                 })
             })
         } else {
-            return controller.hears(`What is your ${detail}?`, 'message', async(bot, message) =>{
+            return controller.hears([`What is your ${detail}?`, `^${detail}$`], 'message', async(bot, message) =>{
                     bot.reply(message, `My ${detail} is ${val}`)
                     await bot.reply(message,{
                                 text: 'Would you like more contact info or the main menu?',
