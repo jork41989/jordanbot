@@ -24,6 +24,10 @@ module.exports = function(controller) {
                         title: 'Education',
                         payload: 'Education',
                     },
+                    {
+                        title: 'Tech Stack',
+                        payload: 'Tech Stack',
+                    },
                 ]
             });
     });
